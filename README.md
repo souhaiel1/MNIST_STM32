@@ -29,9 +29,9 @@ It is also important to run an analysis on the CNN neural net to see if it would
 - The final step is to deploy the Neural Network and dispaly the most two significant probabilities i.e guesses of our CNN ( we want to see how accurate the predictions are in the presence of simularities because for example, handwritten 3 can be mistaken for an 8 and so on .. ). You can use Teraterm or putty to display the first two labels and their probabilities. 
 
 <p align="center">
-  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test2.PNG" />
-  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test3.PNG" />
-  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test4.PNG" />
+  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test2.png" />
+  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test3.png" />
+  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test4.png" />
 </p>
 
  
