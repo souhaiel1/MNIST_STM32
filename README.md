@@ -3,6 +3,11 @@
  Along with the deepening development in communication technologies and the surge of mobile devices, Edge Computing, is surging in popularity.  Meanwhile, Artificial Intelligence (AI) applications are thriving with the breakthroughs in deep learning and the upgrade of hardware architectures. Billions of bytes of data, generated at the network edge, put    great demands on data processing and structural optimization. Therefore, there exists a strong demand to integrate Edge Computing and AI, which gives birth to Edge Intelligence.  
 This project explores this concept and offers an MNIST Handwritten Digit Recognition model desiged to run on STM32F429I Disco board. The model is a CNN built using Keras anf TF2 and compressed and generated using X-Cube-AI.
 
+## Instruction 
+- After loading the project you can write a digit on the touch screen, this digit will be rescaled on the right bottom to a 28x28 image. 
+- Press the blue button to make a prediction
+- press clear to reset the UI
+- Connect to putty or teraterm to display the most two significant prediction probabilities
 Demo: 
 <p align="center">
   <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/gif1.gif" width="1000" height="500" />
@@ -28,11 +33,11 @@ It is also important to run an analysis on the CNN neural net to see if it would
 - The second step is to implement  the touch sensor and user interface, which consists of writing zone on which the used is propmted to write a digit, a scaled down 28x28 image of what the user wrote (NN input), the NN prediction and a button to reset the UI. 
 - The final step is to deploy the Neural Network and dispaly the most two significant probabilities i.e guesses of our CNN ( we want to see how accurate the predictions are in the presence of simularities because for example, handwritten 3 can be mistaken for an 8 and so on .. ). You can use Teraterm or putty to display the first two labels and their probabilities. 
 
-Some test when the user input is 
+Some test when the user input is 0,2 and 5 respectfully. 
 <p align="center">
   <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test2.png" />
   <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test3.png" />
   <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/test5.png" />
 </p>
 
- 
+You can avoid using USART1  to print the probabilities on  teraterm or putty by simply displaying it directly on the touch screen. 
