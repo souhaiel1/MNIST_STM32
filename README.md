@@ -11,6 +11,6 @@ Demo:
  
  This project is built using STM32CubeIDE and tested on STM32F429I-DISCO baord , but it can be easly modifed to be used on any STM32F4 board.
  
- ![](Images/stm32.jpg =500x500)
+ ![](Images/stm32.jpg width="500" height="500")
  
  ## CNN 
