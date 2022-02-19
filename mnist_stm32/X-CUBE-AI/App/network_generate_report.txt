@@ -1,0 +1,61 @@
+Neural Network Tools for STM32 v1.2.0 (AI tools v5.0.0)
+Created date       : 2022-02-16 23:19:54
+
+Exec/report summary (generate dur=1.482s err=0)
+------------------------------------------------------------------------------------------------------------------------
+model file         : C:\Users\21655\STM32CubeIDE\workspace_1.6.1\mnist_tm32\mnist_keras_model\model.h5
+model file         : C:\Users\21655\STM32CubeIDE\workspace_1.6.1\mnist_tm32\mnist_keras_model\model.json
+type               : keras (keras_conf)
+c_name             : network
+compression        : None
+quantize           : None
+L2r error          : NOT EVALUATED
+workspace dir      : C:\Users\21655\AppData\Local\Temp\mxAI_workspace307806174265008275186013907688710
+output dir         : C:\Users\21655\.stm32cubemx\stm32ai_output
+
+model_name         : model
+model_hash         : f7e08a8ca31de8ace403d4470fbfa672
+input              : input_0 [784 items, 3.06 KiB, ai_float, FLOAT32, (784,)]
+input (total)      : 3.06 KiB
+output             : dense_2_nl [10 items, 40 B, ai_float, FLOAT32, (10,)]
+output (total)     : 40 B
+params #           : 235,146 items (918.54 KiB)
+macc               : 235,286
+weights (ro)       : 940,584 (918.54 KiB) 
+activations (rw)   : 1,536 (1.50 KiB) 
+ram (total)        : 4,712 (4.60 KiB) = 1,536 + 3,136 + 40
+
+------------------------------------------------------------------------------------------------------------------------
+id  layer (type)              output shape      param #     connected to             macc           rom                
+------------------------------------------------------------------------------------------------------------------------
+0   input_0 (Input)           (28, 1, 28)                                                                              
+    flatten (Reshape)         (784,)                        input_0                                                    
+------------------------------------------------------------------------------------------------------------------------
+1   dense (Dense)             (256,)            200,960     flatten                  200,704        803,840            
+    dense_nl (Nonlinearity)   (256,)                        dense                    256                               
+------------------------------------------------------------------------------------------------------------------------
+2   dense_1 (Dense)           (128,)            32,896      dense_nl                 32,768         131,584            
+    dense_1_nl (Nonlinearity) (128,)                        dense_1                  128                               
+------------------------------------------------------------------------------------------------------------------------
+4   dense_2 (Dense)           (10,)             1,290       dense_1_nl               1,280          5,160              
+    dense_2_nl (Nonlinearity) (10,)                         dense_2                  150                               
+------------------------------------------------------------------------------------------------------------------------
+model p=235146(918.54 KBytes) macc=235286 rom=918.54 KBytes ram=1.50 KiB io_ram=3.10 KiB
+
+ 
+Complexity per-layer - macc=235,286 rom=940,584
+------------------------------------------------------------------------------------------------------------------------
+id      layer (type)              macc                                    rom                                    
+------------------------------------------------------------------------------------------------------------------------
+1       dense (Dense)             |||||||||||||||||||||||||||||||  85.3%  |||||||||||||||||||||||||||||||  85.5% 
+1       dense_nl (Nonlinearity)   |                                 0.1%  |                                 0.0% 
+2       dense_1 (Dense)           |||||                            13.9%  |||||                            14.0% 
+2       dense_1_nl (Nonlinearity) |                                 0.1%  |                                 0.0% 
+4       dense_2 (Dense)           |                                 0.5%  |                                 0.5% 
+4       dense_2_nl (Nonlinearity) |                                 0.1%  |                                 0.0% 
+------------------------------------------------------------------------------------------------------------------------
+
+
+Evaluation report (summary)
+--------------------------------------------------
+NOT EVALUATED
