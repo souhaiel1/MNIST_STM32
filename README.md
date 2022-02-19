@@ -20,3 +20,18 @@ Demo:
 <p align="center">
   <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/model.PNG" />
 </p>
+
+## The Steps 
+
+- The first step was creating and setting up the project in STM32CubeIDE. This icludes selecting the target board (STM32F429I DISCO), configuring the necessary pins, clock speed and peripherals as well as enabling AI. One must also set the paths for the external drivers to be used (BSP and utilities).
+It is also important to run an analysis on the CNN neural net to see if it would fit on the target board on not ( check the necessary FLAH and RAM memory needed ) 
+- The second step is to implement  the touch sensor and user interface, which consists of writing zone on which the used is propmted to write a digit, a scaled down 28x28 image of what the user wrote (NN input), the NN prediction and a button to reset the UI. 
+
+<p align="center">
+  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/mtest2.PNG" />
+  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/mtest3.PNG" />
+  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/mtest4.PNG" />
+</p>
+
+- The final step is to deploy the Neural Network and dispaly the most two significant probabilities i.e guesses of our CNN ( we want to see how accurate the predictions are in the presence of simularities because for example, handwritten 3 can be mistaken for an 8 and so on .. ). You can use Teraterm or putty to display the first two labels and their probabilities. 
+ 
