@@ -8,6 +8,7 @@ This project explores this concept and offers an MNIST Handwritten Digit Recogni
 - Press the blue button to make a prediction
 - press clear to reset the UI
 - Connect to putty or teraterm to display the most two significant prediction probabilities
+
 Demo: 
 <p align="center">
   <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/gif1.gif" width="1000" height="500" />
