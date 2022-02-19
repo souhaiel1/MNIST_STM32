@@ -1,7 +1,7 @@
 # MNIST_STM32
  
  Along with the deepening development in communication technologies and the surge of mobile devices, Edge Computing, is surging in popularity.  Meanwhile, Artificial Intelligence (AI) applications are thriving with the breakthroughs in deep learning and the upgrade of hardware architectures. Billions of bytes of data, generated at the network edge, put    great demands on data processing and structural optimization. Therefore, there exists a strong demand to integrate Edge Computing and AI, which gives birth to Edge Intelligence.  
-This project explores this concept and offers an MNIST Handwritten Digit Recognition model desiged to run on STM32F429I Disco board. The model is a CNN built using Keras anf TF2 and compressed and generated using X-Cube-AI.
+This project explores this concept and offers an MNIST Handwritten Digit Recognition model desiged to run on STM32F429I Disco board. The model is a CNN built using Keras anf TF2 and compressed and re-generated in C code by X-Cube-AI using the model (.h5 file) and the topology (.json file) .
 
 ## Instruction 
 - After loading the project you can write a digit on the touch screen, this digit will be rescaled on the right bottom to a 28x28 image. 
