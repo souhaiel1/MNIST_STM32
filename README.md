@@ -18,5 +18,5 @@ Demo:
  The model used is CNN trained on MNIST dataset for handwriten-digit recognition. Tensorflow  with Keras were used to train and savethe model which's architecture is as follows:
  
 <p align="center">
-  <img src="https://github.com/souhaiel1/MNIST_STM32/Images/model.PNG" />
+  <img src="https://github.com/souhaiel1/MNIST_STM32/blob/main//Images/model.PNG" />
 </p>
