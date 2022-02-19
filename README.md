@@ -3,4 +3,4 @@
 
 Demo: 
 <p align="center">
-  <img src="https://github.com/souhaiel1/MNIST_STM32/Images/blob/main/gif1.gif" width="1000" height="600" />
+  <img src="https://github.com/souhaiel1/MNIST_STM32/Images/blob/main/gif1.gif" width="1000" height="500" />
